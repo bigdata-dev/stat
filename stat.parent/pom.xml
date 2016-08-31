@@ -26,5 +26,6 @@
   </dependencies>
   <modules>
     <module>stat.hadoop</module>
+    <module>stat.storm</module>
   </modules>
 </project>
