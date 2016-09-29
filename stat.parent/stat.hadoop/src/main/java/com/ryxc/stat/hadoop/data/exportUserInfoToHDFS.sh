@@ -3,6 +3,7 @@ source /etc/profile
 #通用的属性配置
 source /opt/work/conf/mysqlconn.conf
 
+
 #起始变量
 j=1
 #结束变量
