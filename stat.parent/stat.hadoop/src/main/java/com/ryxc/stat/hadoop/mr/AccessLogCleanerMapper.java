@@ -52,6 +52,7 @@ public class AccessLogCleanerMapper extends Mapper<LongWritable, Text, NullWrita
 			throws IOException, InterruptedException {
 		//appid	ip	mid	userid	login_type	request		status	http_referer	user_agent	time
 		int len = value.toString().split("\t").length;
+		logger.info(" ####　len="+len);
 		if(null!=value&&value.toString().split("\t").length==10){
 			strs = value.toString().split("\t");
 			
