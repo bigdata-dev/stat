@@ -1,7 +1,7 @@
 #!/bin/sh
 source /etc/profile
 #通用的属性配置
-source /home/ryxc/stat/conf/mysqlconn.conf
+source /home/ryxc/work/stat/conf/mysqlconn.conf
 
 #将hdfs的hive表数据导出到mysql对应的表中 供前台查看和展示
 function handle(){
