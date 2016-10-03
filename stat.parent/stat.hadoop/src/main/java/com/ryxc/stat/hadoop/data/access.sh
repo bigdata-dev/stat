@@ -23,7 +23,7 @@ echo $login_pid
 #uv pv
 {
 echo "begin uv pv"
-sh /home/ryxc/work/stat/shell/hive/t_stat_app_uv_tbl.sh > /home/ryxc/work/stat/logs/t_stat_app_uv_tbl.log.${stat_date} 2>&1
+sh /home/ryxc/work/stat/shell/hive/app_uv_pv_stat.sh > /home/ryxc/work/stat/logs/app_uv_pv_stat.sh.log.${stat_date} 2>&1
 }&
 uv_pid=$!
 echo $uv_pid
@@ -46,7 +46,7 @@ echo "end kettle"
 echo `date +"%Y-%m-%d %H:%M:%S"`
 end_time=`date`
 timeInteval= end_time-start_time
-echo "timeInteval-"+timeInteval/1000/60+"s"
+echo "timeInteval-"$[$timeInteval / 1000 / 60]" minute"
 echo "job end"
 
 

@@ -36,7 +36,7 @@ public class InitIP4Redis {
 //		jedis.set("ip:221.195.40.145","河北省	邢台区");
 		
 		
-		BufferedReader reader=new BufferedReader(new FileReader(new File("D:\\hadoop\\eclipse\\workspace_project\\git\\stat\\stat.parent\\stat.hadoop\\src\\main\\java\\com\\ryxc\\stat\\hadoop\\data\\ip.data")));
+		BufferedReader reader=new BufferedReader(new FileReader(new File("ip.data")));
 		String line=null;
 		String[] worlds=null;
 		while(null!=(line=reader.readLine())){
