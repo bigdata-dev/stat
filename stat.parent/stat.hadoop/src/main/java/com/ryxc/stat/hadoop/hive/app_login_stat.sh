@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 source /etc/profile
 #引入mysql连接
-source /home/ryxc/stat/conf/mysqlconn.conf
+source /home/ryxc/work/stat/conf/mysqlconn.conf
 #define hadoop export mysql method
 function handle(){
         date=$1

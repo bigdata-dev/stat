@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 source /etc/profile
-source /home/ryxc/stat/conf/mysqlconn.conf
+source /home/ryxc/work/stat/conf/mysqlconn.conf
 
 function handle(){
 	date=$1
@@ -48,7 +48,7 @@ let j=j-1
 
 
 
-hive -hivevar yester_day="${yesterday}" -hivevar yester_day_before="${yesterday_before}" -f '/home/ryxc/stat/shell/hive_script/app_one_remain_stat.hql';
+hive -hivevar yester_day="${yesterday}" -hivevar yester_day_before="${yesterday_before}" -f '/home/ryxc/work/stat/shell/hive/app_one_remain_stat.hql';
 
 #mysql export
 /usr/bin/mysql -h$stat_ipaddr -P$stat_port -u$stat_uname -p$stat_upwd -D$stat_dbname -e "delete from t_stat_app_one_remain_tbl where stat_date = '${yesterday}'";
