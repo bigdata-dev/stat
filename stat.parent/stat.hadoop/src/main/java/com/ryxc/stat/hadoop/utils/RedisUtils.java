@@ -19,7 +19,9 @@ public class RedisUtils {
 			//设置创建链接的超时时间
 			jedisPoolConfig.setMaxWaitMillis(10000);
 			//表示连接池在创建链接的时候会先测试一下链接是否可用，这样可以保证连接池中的链接都可用的
-			jedisPool = new JedisPool(jedisPoolConfig, "hh166.all123.net", 6379,30000, "redis");
+			//String host = "hh166.all123.net";
+			String host = "192.168.116.166";
+			jedisPool = new JedisPool(jedisPoolConfig, host, 6379,30000, "redis");
 		}
 		return jedisPool.getResource();
 	}

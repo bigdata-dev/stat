@@ -3,7 +3,7 @@
   <repository>    <id>KettleFileRepository</id>
     <name>file_rep</name>
     <description>file_rep</description>
-    <base_directory>/home/ryxc/stat/kettle/file_rep</base_directory>
+    <base_directory>/home/ryxc/work/stat/kettle/file_rep</base_directory>
     <read_only>N</read_only>
     <hides_hidden_files>N</hides_hidden_files>
   </repository>  </repositories>
