@@ -4,11 +4,14 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
-import com.ryxc.stat.hadoop.utils.RedisUtils;
+import org.apache.log4j.Logger;
+
 import redis.clients.jedis.Jedis;
 
-public class InitIP4Redis {
+import com.ryxc.stat.hadoop.utils.RedisUtils;
 
+public class InitIP4Redis {
+	private static Logger  logger = Logger.getLogger(InitIP4Redis.class);
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -36,7 +39,12 @@ public class InitIP4Redis {
 //		jedis.set("ip:221.195.40.145","河北省	邢台区");
 		
 		
-		BufferedReader reader=new BufferedReader(new FileReader(new File("ip.data")));
+		if(args.length==0){
+			logger.error("args need at least 1");
+		}
+		String input = args[0];
+		logger.info(" ### input:"+input);
+		BufferedReader reader=new BufferedReader(new FileReader(new File(input)));
 		String line=null;
 		String[] worlds=null;
 		while(null!=(line=reader.readLine())){
