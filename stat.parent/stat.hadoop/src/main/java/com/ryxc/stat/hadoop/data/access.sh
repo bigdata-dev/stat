@@ -3,7 +3,7 @@ source /etc/profile
 
 stat_date=`date -d"yesterday"  +"%Y-%m-%d"`
 echo "job begin"
-start_time=`date`
+start_time=`date +%s`
 echo `date +"%Y-%m-%d %H:%M:%S"`
 cd /home/ryxc/work
 echo "begin accessCleaner"
@@ -40,13 +40,16 @@ wait $uv_pid
 wait $remain_pid
 
 echo "begin kettle"
+
 sh /home/ryxc/kettle/data-integration/kitchen.sh -rep file_rep -job J_O_app_core_view_stat -dir /access/core_view -param:stat_date=${stat_date} -level Detailed > /home/ryxc/work/stat/logs/J_O_app_core_view_stat.${stat_date} 2>&1 
 echo "end kettle"
 
 echo `date +"%Y-%m-%d %H:%M:%S"`
-end_time=`date`
-timeInteval= end_time-start_time
-echo "timeInteval-"$[$timeInteval / 1000 / 60]" minute"
+end_time=`date +%s`
+timeInteval=$[ end_time - start_time ]
+echo "start_time-"$start_time
+echo "end_time-"$end_time
+echo "timeInteval-"$timeInteval" m"
 echo "job end"
 
 
