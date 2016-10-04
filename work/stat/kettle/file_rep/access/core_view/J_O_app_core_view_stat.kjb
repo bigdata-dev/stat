@@ -1,14 +1,14 @@
 <job>
-  <name>J_O_access_stat</name>
+  <name>J_O_app_core_view_stat</name>
     <description/>
     <extended_description/>
     <job_version/>
     <job_status>0</job_status>
-  <directory>&#x2f;access</directory>
+  <directory>&#x2f;access&#x2f;core_view</directory>
   <created_user>-</created_user>
-  <created_date>2016&#x2f;04&#x2f;05 19&#x3a;50&#x3a;46.595</created_date>
+  <created_date>2016&#x2f;04&#x2f;06 17&#x3a;58&#x3a;18.186</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2016&#x2f;10&#x2f;04 19&#x3a;43&#x3a;49.592</modified_date>
+  <modified_date>2016&#x2f;06&#x2f;02 17&#x3a;09&#x3a;35.428</modified_date>
     <parameters>
         <parameter>
             <name>stat_date</name>
@@ -58,40 +58,110 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>80</xloc>
-      <yloc>240</yloc>
+      <xloc>112</xloc>
+      <yloc>192</yloc>
       </entry>
     <entry>
-      <name>J_O_app_core_view_stat</name>
+      <name>app_uv_pv</name>
       <description/>
-      <type>JOB</type>
+      <type>TRANS</type>
       <specification_method>rep_name</specification_method>
-      <job_object_id/>
+      <trans_object_id/>
       <filename/>
-      <jobname>J_O_app_core_view_stat</jobname>
+      <transname>app_uv_pv</transname>
       <directory>&#x2f;access&#x2f;core_view</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
       <set_logfile>N</set_logfile>
       <logfile/>
       <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Nothing</loglevel>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
       <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
       <wait_until_finished>Y</wait_until_finished>
       <follow_abort_remote>N</follow_abort_remote>
-      <expand_remote_job>N</expand_remote_job>
       <create_parent_folder>N</create_parent_folder>
-      <pass_export>N</pass_export>
+      <logging_remote_work>N</logging_remote_work>
       <parameters>        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>      <set_append_logfile>N</set_append_logfile>
-      <parallel>N</parallel>
+      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>560</xloc>
+      <xloc>320</xloc>
+      <yloc>112</yloc>
+      </entry>
+    <entry>
+      <name>app_login</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>app_login</transname>
+      <directory>&#x2f;access&#x2f;core_view</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>400</xloc>
       <yloc>240</yloc>
+      </entry>
+    <entry>
+      <name>app_one_remain</name>
+      <description/>
+      <type>TRANS</type>
+      <specification_method>rep_name</specification_method>
+      <trans_object_id/>
+      <filename/>
+      <transname>app_one_remain</transname>
+      <directory>&#x2f;access&#x2f;core_view</directory>
+      <arg_from_previous>N</arg_from_previous>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
+      <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <logging_remote_work>N</logging_remote_work>
+      <parameters>        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>      <parallel>N</parallel>
+      <draw>Y</draw>
+      <nr>0</nr>
+      <xloc>496</xloc>
+      <yloc>128</yloc>
       </entry>
     <entry>
       <name>&#x6210;&#x529f;</name>
@@ -100,104 +170,48 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>768</xloc>
-      <yloc>240</yloc>
+      <xloc>640</xloc>
+      <yloc>208</yloc>
       </entry>
     <entry>
-      <name>send_mail_view</name>
+      <name>app_core_init</name>
       <description/>
-      <type>MAIL</type>
-      <server>smtp.sina.com</server>
-      <port>25</port>
-      <destination/>
-      <destinationCc/>
-      <destinationBCc/>
-      <replyto>wzhwei_test&#x40;sina.com</replyto>
-      <replytoname>wzhwei_test&#x40;sina.com</replytoname>
-      <subject>&#x9519;&#x8bef;&#x811a;&#x672c;</subject>
-      <include_date>N</include_date>
-      <contact_person/>
-      <contact_phone/>
-      <comment>view</comment>
-      <include_files>N</include_files>
-      <zip_files>N</zip_files>
-      <zip_name/>
-      <use_auth>Y</use_auth>
-      <use_secure_auth>N</use_secure_auth>
-      <auth_user>wzhwei_test&#x40;sina.com</auth_user>
-      <auth_password>Encrypted 2beefd5a01dc29bbbbf1cbd64e1c3fd89</auth_password>
-      <only_comment>N</only_comment>
-      <use_HTML>N</use_HTML>
-      <use_Priority>N</use_Priority>
-      <encoding>UTF-8</encoding>
-      <priority>normal</priority>
-      <importance>normal</importance>
-      <sensitivity>normal</sensitivity>
-      <secureconnectiontype>SSL</secureconnectiontype>
-      <replyToAddresses/>
-      <filetypes>      </filetypes>      <embeddedimages>
-      </embeddedimages>
-      <parallel>N</parallel>
-      <draw>Y</draw>
-      <nr>0</nr>
-      <xloc>560</xloc>
-      <yloc>384</yloc>
-      </entry>
-    <entry>
-      <name>J_O_access_shell</name>
-      <description/>
-      <type>JOB</type>
+      <type>TRANS</type>
       <specification_method>rep_name</specification_method>
-      <job_object_id/>
+      <trans_object_id/>
       <filename/>
-      <jobname>J_O_access_shell</jobname>
-      <directory>&#x2f;access</directory>
+      <transname>app_core_init</transname>
+      <directory>&#x2f;access&#x2f;core_view</directory>
       <arg_from_previous>N</arg_from_previous>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
       <set_logfile>N</set_logfile>
       <logfile/>
       <logext/>
       <add_date>N</add_date>
       <add_time>N</add_time>
-      <loglevel>Nothing</loglevel>
+      <loglevel>Basic</loglevel>
+      <cluster>N</cluster>
       <slave_server_name/>
+      <set_append_logfile>N</set_append_logfile>
       <wait_until_finished>Y</wait_until_finished>
       <follow_abort_remote>N</follow_abort_remote>
-      <expand_remote_job>N</expand_remote_job>
       <create_parent_folder>N</create_parent_folder>
-      <pass_export>N</pass_export>
+      <logging_remote_work>N</logging_remote_work>
       <parameters>        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>      <set_append_logfile>N</set_append_logfile>
-      <parallel>N</parallel>
+      </parameters>      <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>288</xloc>
-      <yloc>240</yloc>
+      <xloc>224</xloc>
+      <yloc>208</yloc>
       </entry>
   </entries>
   <hops>
     <hop>
-      <from>J_O_app_core_view_stat</from>
-      <to>&#x6210;&#x529f;</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>J_O_app_core_view_stat</from>
-      <to>send_mail_view</to>
-      <from_nr>0</from_nr>
-      <to_nr>0</to_nr>
-      <enabled>Y</enabled>
-      <evaluation>N</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
       <from>START</from>
-      <to>J_O_access_shell</to>
+      <to>app_core_init</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
@@ -205,8 +219,35 @@
       <unconditional>Y</unconditional>
     </hop>
     <hop>
-      <from>J_O_access_shell</from>
-      <to>J_O_app_core_view_stat</to>
+      <from>app_core_init</from>
+      <to>app_uv_pv</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>app_uv_pv</from>
+      <to>app_login</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>app_login</from>
+      <to>app_one_remain</to>
+      <from_nr>0</from_nr>
+      <to_nr>0</to_nr>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>app_one_remain</from>
+      <to>&#x6210;&#x529f;</to>
       <from_nr>0</from_nr>
       <to_nr>0</to_nr>
       <enabled>Y</enabled>
