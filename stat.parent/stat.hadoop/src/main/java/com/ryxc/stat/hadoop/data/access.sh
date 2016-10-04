@@ -47,8 +47,6 @@ echo "end kettle"
 echo `date +"%Y-%m-%d %H:%M:%S"`
 end_time=`date +%s`
 timeInteval=$[ end_time - start_time ]
-echo "start_time-"$start_time
-echo "end_time-"$end_time
 echo "timeInteval-"$timeInteval" m"
 echo "job end"
 

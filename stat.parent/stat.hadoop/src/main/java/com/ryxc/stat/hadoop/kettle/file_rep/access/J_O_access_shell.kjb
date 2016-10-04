@@ -8,7 +8,7 @@
   <created_user>-</created_user>
   <created_date>2016&#x2f;04&#x2f;07 15&#x3a;31&#x3a;54.052</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2016&#x2f;06&#x2f;03 15&#x3a;24&#x3a;21.472</modified_date>
+  <modified_date>2016&#x2f;10&#x2f;04 19&#x3a;43&#x3a;47.997</modified_date>
     <parameters>
         <parameter>
             <name>stat_date</name>
@@ -46,7 +46,7 @@
       <description/>
       <type>SHELL</type>
       <filename/>
-      <work_directory>&#x2f;opt&#x2f;work</work_directory>
+      <work_directory/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
       <set_logfile>N</set_logfile>
@@ -56,7 +56,7 @@
       <add_date>N</add_date>
       <add_time>N</add_time>
       <insertScript>Y</insertScript>
-      <script>sh &#x2f;opt&#x2f;work&#x2f;shell&#x2f;accessCleaner.sh &#x3e;&#x2f;opt&#x2f;work&#x2f;logs&#x2f;accessCleaner.log.&#x24;&#x7b;stat_date&#x7d; 2&#x3e;&#x26;1</script>
+      <script>sh &#x2f;home&#x2f;ryxc&#x2f;work&#x2f;stat&#x2f;shell&#x2f;accessCleaner.sh &#x3e; &#x2f;home&#x2f;ryxc&#x2f;work&#x2f;stat&#x2f;logs&#x2f;accessCleaner.log.&#x24;&#x7b;stat_date&#x7d; 2&#x3e;&#x26;1</script>
       <loglevel>Basic</loglevel>
       <parallel>Y</parallel>
       <draw>Y</draw>
@@ -89,7 +89,7 @@
       <description/>
       <type>SHELL</type>
       <filename/>
-      <work_directory>&#x2f;opt&#x2f;work</work_directory>
+      <work_directory/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
       <set_logfile>N</set_logfile>
@@ -99,7 +99,7 @@
       <add_date>N</add_date>
       <add_time>N</add_time>
       <insertScript>Y</insertScript>
-      <script>sh &#x2f;opt&#x2f;work&#x2f;hive_script&#x2f;app_one_remain_stat.sh &#x3e;&#x2f;opt&#x2f;work&#x2f;logs&#x2f;app_one_remain_stat.log.&#x24;&#x7b;stat_date&#x7d; 2&#x3e;&#x26;1</script>
+      <script>sh &#x2f;home&#x2f;ryxc&#x2f;work&#x2f;stat&#x2f;shell&#x2f;hive&#x2f;app_one_remain_stat.sh &#x3e; &#x2f;home&#x2f;ryxc&#x2f;work&#x2f;stat&#x2f;logs&#x2f;app_one_remain_stat.log.&#x24;&#x7b;stat_date&#x7d; 2&#x3e;&#x26;1</script>
       <loglevel>Basic</loglevel>
       <parallel>N</parallel>
       <draw>Y</draw>
@@ -112,7 +112,7 @@
       <description/>
       <type>SHELL</type>
       <filename/>
-      <work_directory>&#x2f;opt&#x2f;work</work_directory>
+      <work_directory/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
       <set_logfile>N</set_logfile>
@@ -122,7 +122,7 @@
       <add_date>N</add_date>
       <add_time>N</add_time>
       <insertScript>Y</insertScript>
-      <script>sh &#x2f;opt&#x2f;work&#x2f;hive_script&#x2f;app_login_stat.sh &#x3e;&#x2f;opt&#x2f;work&#x2f;logs&#x2f;app_login_stat.log.&#x24;&#x7b;stat_date&#x7d; 2&#x3e;&#x26;1</script>
+      <script>sh &#x2f;home&#x2f;ryxc&#x2f;work&#x2f;stat&#x2f;shell&#x2f;hive&#x2f;app_login_stat.sh &#x3e; &#x2f;home&#x2f;ryxc&#x2f;work&#x2f;stat&#x2f;logs&#x2f;app_login_stat.log.&#x24;&#x7b;stat_date&#x7d; 2&#x3e;&#x26;1</script>
       <loglevel>Basic</loglevel>
       <parallel>N</parallel>
       <draw>Y</draw>
@@ -135,7 +135,7 @@
       <description/>
       <type>SHELL</type>
       <filename/>
-      <work_directory>&#x2f;opt&#x2f;work</work_directory>
+      <work_directory/>
       <arg_from_previous>N</arg_from_previous>
       <exec_per_row>N</exec_per_row>
       <set_logfile>N</set_logfile>
@@ -145,7 +145,7 @@
       <add_date>N</add_date>
       <add_time>N</add_time>
       <insertScript>Y</insertScript>
-      <script>sh &#x2f;opt&#x2f;work&#x2f;hive_script&#x2f;app_uv_pv_stat.sh &#x3e;&#x2f;opt&#x2f;work&#x2f;logs&#x2f;app_uv_pv_stat.log.&#x24;&#x7b;stat_date&#x7d; 2&#x3e;&#x26;1</script>
+      <script>sh &#x2f;home&#x2f;ryxc&#x2f;work&#x2f;stat&#x2f;shell&#x2f;hive&#x2f;app_uv_pv_stat.sh &#x3e; &#x2f;home&#x2f;ryxc&#x2f;work&#x2f;stat&#x2f;logs&#x2f;app_uv_pv_stat.sh.log.&#x24;&#x7b;stat_date&#x7d; 2&#x3e;&#x26;1</script>
       <loglevel>Basic</loglevel>
       <parallel>N</parallel>
       <draw>Y</draw>
@@ -230,8 +230,8 @@
       <parallel>N</parallel>
       <draw>Y</draw>
       <nr>0</nr>
-      <xloc>336</xloc>
-      <yloc>64</yloc>
+      <xloc>320</xloc>
+      <yloc>32</yloc>
       </entry>
     <entry>
       <name>send_mail_uv_pv</name>
