@@ -27,5 +27,6 @@
   <modules>
     <module>stat.hadoop</module>
     <module>stat.storm</module>
+    <module>stat.kafka</module>
   </modules>
 </project>
